@@ -6,12 +6,13 @@
   "scripts": {
     "start": "node dist/index.js",
     "dev": "nodemon src/index.js --exec babel-node",
-    "build": "babel src -d dist && ncp src/views dist/views && ncp src/public dist/public" 
+    "build": "babel src -d dist && ncp src/views dist/views && ncp src/public dist/public"
   },
   "keywords": [],
   "author": "Percy@RC",
   "license": "ISC",
   "dependencies": {
+    "@babel/runtime": "^7.19.4",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-handlebars": "^6.0.6",
